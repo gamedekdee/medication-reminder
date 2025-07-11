@@ -11,7 +11,7 @@ jobs:
     steps:
             - name: Call sendReminder endpoint
         run: |
-          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://medication-reminder-sand.vercel.app/api/sendReminder)
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" medication-reminder-git-main-gamedekdees-projects.vercel.app)
           echo "HTTP status: $STATUS"
           if [ "$STATUS" -ne 200 ]; then exit 1; fi
 
